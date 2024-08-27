@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digi-Clock</title>
+    <link rel="stylesheet" href="DigiClock.css">
+</head>
+
+<body>
+    <header><h1>🕰DIGITAL CLOCK🕰</h1><br></header>
+
+
+    <div class="clock-container">
+        <div class="time" id="hours">
+            <h2>Hrs</h2> 00:
+        </div>
+        <div class="time" id="minutes">
+            <h2>Min</h2> 00 :
+        </div>
+        <div class="time" id="seconds">
+            <h2>Sec</h2> 00
+        </div>
+    </div>
+
+
+    <div class="Info">
+        <div>Hrs :</div>
+        <div> Min :</div>
+        <div>Sec</div>
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+        function updateClock() {
+            const now = new Date();
+
+            const hours = formatTime(now.getHours());
+            const minutes = formatTime(now.getMinutes());
+            const seconds = formatTime(now.getSeconds());
+
+            document.getElementById('hours').innerText = hours;
+            document.getElementById('minutes').innerText = minutes;
+            document.getElementById('seconds').innerText = seconds;
+        }
+
+        function formatTime(time) {
+            return time < 10 ? `0${time}` : time;
+        }
+
+        setInterval(updateClock, 1000);
+
+        updateClock();
+    </script>
+</body>
+</html>

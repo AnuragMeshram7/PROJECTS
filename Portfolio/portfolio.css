@@ -1,0 +1,61 @@
+body{
+
+    background-color: rgb(204, 204, 204);
+}
+
+header{
+
+    background-color: rgb(93, 93, 93);
+    color: rgb(57, 212, 255);
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+h1{
+
+    background-color: rgb(93, 93, 93);
+    color: rgb(102, 171, 231);
+    
+}
+
+.navigation{
+
+    background-color: rgb(243, 239, 239);
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    color: rgb(21, 21, 21);
+}
+a{
+    margin: 20px;
+}
+
+
+
+
+
+
+
+h1, h2, h3 {
+    color: rgb(57, 212, 255);
+}
+
+
+
+
+h2 {
+    color: #008277;
+}
+
+h3 {
+    color: #333;
+    margin-top: 10px;
+}
+
+.project-link {
+    color: #4CAF50;
+}
+
+.project-link:hover {
+    text-decoration: underline;
+}
